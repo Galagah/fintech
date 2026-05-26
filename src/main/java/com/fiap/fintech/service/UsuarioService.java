@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UsuarioService {
 
+    // Camada de servico responsavel pelas regras de CRUD de usuarios.
     private final UsuarioRepository repository;
 
     public UsuarioService(UsuarioRepository repository) {

@@ -17,12 +17,14 @@ import java.time.LocalDate;
 @Table(name = "TB_DESPESA")
 public class Despesa {
 
+    // Identificador unico da despesa no banco de dados.
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "despesa_seq")
     @SequenceGenerator(name = "despesa_seq", sequenceName = "SQ_DESPESA", allocationSize = 1)
     @Column(name = "ID_DESPESA")
     private Long id;
 
+    // Dados financeiros da despesa registrada pelo usuario.
     @NotBlank
     @Column(name = "DESCRICAO", nullable = false, length = 120)
     private String descricao;

@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/despesas")
 public class DespesaController {
 
+    // Controller REST que expoe os endpoints de despesas.
     private final DespesaService service;
 
     public DespesaController(DespesaService service) {

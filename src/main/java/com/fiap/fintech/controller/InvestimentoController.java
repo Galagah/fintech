@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/investimentos")
 public class InvestimentoController {
 
+    // Controller REST que expoe os endpoints de investimentos.
     private final InvestimentoService service;
 
     public InvestimentoController(InvestimentoService service) {

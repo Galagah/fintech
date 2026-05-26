@@ -18,12 +18,14 @@ import java.math.BigDecimal;
 @Table(name = "TB_CONTA")
 public class Conta {
 
+    // Identificador unico da conta no banco de dados.
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "conta_seq")
     @SequenceGenerator(name = "conta_seq", sequenceName = "SQ_CONTA", allocationSize = 1)
     @Column(name = "ID_CONTA")
     private Long id;
 
+    // Dados bancarios usados para controlar saldo e status da conta.
     @NotBlank
     @Column(name = "NUMERO_CONTA", nullable = false, unique = true, length = 30)
     private String numeroConta;
