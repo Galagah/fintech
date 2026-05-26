@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class InvestimentoService {
 
+    // Camada de servico responsavel pelas regras de CRUD de investimentos.
     private final InvestimentoRepository repository;
 
     public InvestimentoService(InvestimentoRepository repository) {

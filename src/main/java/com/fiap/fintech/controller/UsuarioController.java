@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/usuarios")
 public class UsuarioController {
 
+    // Controller REST que expoe os endpoints de usuarios.
     private final UsuarioService service;
 
     public UsuarioController(UsuarioService service) {

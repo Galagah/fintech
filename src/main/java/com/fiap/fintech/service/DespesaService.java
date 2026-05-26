@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class DespesaService {
 
+    // Camada de servico responsavel pelas regras de CRUD de despesas.
     private final DespesaRepository repository;
 
     public DespesaService(DespesaRepository repository) {

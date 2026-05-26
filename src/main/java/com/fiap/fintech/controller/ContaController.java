@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/contas")
 public class ContaController {
 
+    // Controller REST que expoe os endpoints de contas.
     private final ContaService service;
 
     public ContaController(ContaService service) {

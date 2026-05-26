@@ -18,12 +18,14 @@ import java.time.LocalDate;
 @Table(name = "TB_INVESTIMENTO")
 public class Investimento {
 
+    // Identificador unico do investimento no banco de dados.
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "investimento_seq")
     @SequenceGenerator(name = "investimento_seq", sequenceName = "SQ_INVESTIMENTO", allocationSize = 1)
     @Column(name = "ID_INVESTIMENTO")
     private Long id;
 
+    // Dados financeiros do investimento acompanhado pela Fintech.
     @NotBlank
     @Column(name = "DESCRICAO", nullable = false, length = 120)
     private String descricao;

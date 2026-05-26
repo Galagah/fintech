@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/auth")
 public class AuthController {
 
+    // Endpoint simples de login usado para validar o fluxo de autenticacao.
     @PostMapping("/login")
     public ResponseEntity<Map<String, String>> login(@Valid @RequestBody LoginRequest request) {
         if ("teste@fiap.com.br".equalsIgnoreCase(request.email()) && "fiap123".equals(request.senha())) {

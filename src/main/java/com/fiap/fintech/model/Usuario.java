@@ -16,12 +16,14 @@ import jakarta.validation.constraints.NotNull;
 @Table(name = "TB_USUARIO")
 public class Usuario {
 
+    // Identificador unico do usuario no banco de dados.
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "usuario_seq")
     @SequenceGenerator(name = "usuario_seq", sequenceName = "SQ_USUARIO", allocationSize = 1)
     @Column(name = "ID_USUARIO")
     private Long id;
 
+    // Dados cadastrais principais do usuario da Fintech.
     @NotBlank
     @Column(name = "NOME", nullable = false, length = 120)
     private String nome;

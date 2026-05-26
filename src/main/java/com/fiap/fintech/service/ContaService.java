@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ContaService {
 
+    // Camada de servico responsavel pelas regras de CRUD de contas.
     private final ContaRepository repository;
 
     public ContaService(ContaRepository repository) {
